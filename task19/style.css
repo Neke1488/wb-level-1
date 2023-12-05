@@ -1,0 +1,22 @@
+.widget {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow-y:scroll;
+}
+.title {
+    text-align: center;
+}
+
+.addNews {
+    padding: 0 40px;
+    list-style: none;
+}
+.img-post {
+    width: 100%;
+}
+
+.newsList {
+    border-bottom: 1px gray solid;
+    padding-bottom: 10px;
+}
