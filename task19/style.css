@@ -1,8 +1,9 @@
 .widget {
-    width: 100%;
     display: flex;
+    width: 500px;
+    height: 500px;
     justify-content: center;
-    overflow-y:scroll;
+    overflow-y: auto;
 }
 .title {
     text-align: center;

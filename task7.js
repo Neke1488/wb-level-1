@@ -14,23 +14,17 @@ const functionArrays = [
         console.log(3)
     }
 ];
-
-//Даллее создаем функцию, в которую передаем нашу переменную
+//объявляем функцию, куда передаем массив функций
 function callFunctions(functionArrays) {
-//Далее используем промисы для того, чтобы функции вызывались в порядке очереди по мере завершения предыдущих
-    let queue = Promise.resolve();
-    functionArrays.forEach(item => {queue = queue.then(item);});
-
-};
-
-console.log(callFunctions(functionArrays));
-
-//ещё один вариант реализации через цикл for
-function callFunctions(functionArrays) {
+//результат будем записывать в пустой массив
 let result = [];
+//с помощью цикла for перебираем массив
 for (let i = 0; i < functionArrays.length; i++) {
+//заполняем выше объявленный пустой массив результатами с конца
         result.push(functionArrays[i]())
 };
-    
+//возвращаем заполненный массив  
     return result;
 }
+
+console.log(callFunctions(functionArrays));

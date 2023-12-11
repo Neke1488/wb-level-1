@@ -6,15 +6,17 @@ const book = {
     name: "Вий",
     author: "Гоголь",
     dateOfPublic: 1833,
+    //метод getProperty для получения какого-либо свойства из объекта
     getProperty(property) {
         return this[property];
     },
+    //метод setProperty для добавления какого-либо свойства из объекта
     setProperty(property, value) {
         this[property] = value;
     }
 };
 
-console.log(book.getProperty('author'));
+console.log(book.getProperty('name'));
 book.setProperty('dateOfPublic', 1547);
 console.log(book.dateOfPublic);
 

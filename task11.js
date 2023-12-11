@@ -3,8 +3,10 @@
 
 
 function closeAndVisible() {
+    //создали функцию, в которой объявили переменную и следом создали ещё одну функцию
     let result = 'im func';
     function other() {
+        //выводим в консоль переменную из вышеобъявленной функции
         console.log(result);
     }
     return other();
